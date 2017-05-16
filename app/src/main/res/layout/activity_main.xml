@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.handongkeji.btvdemo.MainActivity">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:textSize="24sp"
+        android:text="test"
+        android:id="@+id/tv"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.nevermore.oceans.widget.BottomTabLayout
+        android:id="@+id/btl"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize">
+        <com.nevermore.oceans.widget.BottomTabView
+            android:layout_width="0dp"
+            app:tabText="首页"
+            app:tabIconNormal="@mipmap/ic_launcher_round"
+            app:tabIconSelected="@mipmap/ic_launcher"
+            app:tabTextColorNormal="#999999"
+            app:tabTextColorSelected="#2c8bef"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+        <com.nevermore.oceans.widget.BottomTabView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            app:tabIconNormal="@mipmap/ic_launcher_round"
+            app:tabIconSelected="@mipmap/ic_launcher"
+            app:tabTextColorNormal="#999999"
+            app:tabTextColorSelected="#2c8bef"
+            app:tabText="购物车"
+            android:layout_height="match_parent"/>
+        <com.nevermore.oceans.widget.BottomTabView
+            app:tabText="我的"
+            android:layout_width="0dp"
+            app:tabIconNormal="@mipmap/ic_launcher_round"
+            app:tabIconSelected="@mipmap/ic_launcher"
+            app:tabTextColorNormal="#999999"
+            app:tabTextColorSelected="#2c8bef"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+    </com.nevermore.oceans.widget.BottomTabLayout>
+
+</RelativeLayout>
